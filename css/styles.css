@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    padding-left: 50px;
+}
+
+
+html {
+    font-size: 1.2em;
+    font-family: "Huninn", sans-serif;
+}
+
+
+
+
+header {
+    background-color: rgba(137, 43, 226, 0.349);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer {
+    background-color:rgba(137, 43, 226, 0.349);
+    padding: 20px;
+}
+
+.about {
+    background-color: rgba(117, 32, 197, 0.541);
+    padding: 20px 80px;
+    text-align: justify;
+}
+.articles {
+    background-color:rgba(91, 34, 145, 0.562);
+    text-align: center;
+}
+.date {
+    padding: 20px 80px;
+    text-align: right;
+}
+
+.avatar-circle {
+width: 80px;                 
+height: 80px;
+border-radius: 50%;
+border: 1px solid #0a1b66; 
+}
+
+
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    margin-bottom: 1.3rem;
+    text-align: justify;
+}
+
+footer>p{
+    font-size: 1rem;
+    line-height: 1rem;
+}
+p,
+dt {
+  font-weight: bold;
+}
+
+dl,
+dd {
+  font-size: 0.9rem;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 2rem;
+    color: darkblue;
+}
+
+nav>ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+img {
+    display: block;
+    margin: 50px auto;
+}
+
+
+
+header a {
+    color: darkblue;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header a:hover,
+header a:focus,
+header a:active {
+    text-decoration: underline;
+}
+
+.articles li:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+/* h2::after {
+    content: "new";
+    font-size: 10px;
+    color: purple;
+    margin-left: 10px;
+} */
+
+
+.about h2::before {
+    content: "\F824";
+    font-family: "bootstrap-icons";
+    margin-right: 10px;
+    color:aqua;
+}
+.tel::before {
+    content: "\F5C1";
+    font-family: "bootstrap-icons";
+}
+.mail::before {
+    content: "\F32F";
+    font-family: "bootstrap-icons";
+}
+.my a {
+    color:red;
+}
