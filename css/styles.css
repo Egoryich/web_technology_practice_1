@@ -94,7 +94,7 @@ img {
 }
 
 
-
+/* пр2 задание 2 */
 header a {
     color: darkblue;
     text-decoration: none;
@@ -106,17 +106,74 @@ header a:active {
     text-decoration: underline;
 }
 
-.articles li:nth-child(even) {
+
+/* пр2 задание 1 */
+a {
+    color: rgb(238, 114, 217);
+}
+a:visited{
+    color: rgb(43, 4, 58);
+}
+a:hover,
+a:focus,
+a:active {
+    text-decoration: wavy underline;
+}
+
+/* пр2 задание 3 */
+.mainpage .articles a {
+    color: rgb(124, 199, 54);
+}
+.mainpage .articles a:visited{
+    color: rgb(47, 88, 0);
+}
+.mainpage .articles a:hover,
+.mainpage .articles a:focus,
+.mainpage .articles a:active {
+    text-decoration: wavy underline;
+}
+
+/* пр2 з4 */
+.mainpage .articles li:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.082);
 }
 
-/* h2::after {
-    content: "new";
-    font-size: 10px;
-    color: purple;
-    margin-left: 10px;
-} */
 
+/* пр2 з5 */
+.important::after {
+    content: "Важно!";
+    font-size: 10px;
+    color: rgb(255, 133, 255);
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 1px solid #0a1b66; 
+} 
+/* п2з6 */
+.article p::first-line {
+    letter-spacing: 2px; 
+}
+
+/* п2з8 */
+.mainpage .about p{
+    color:rgb(99, 0, 102);
+    background-color: rgba(0, 255, 255, 0.062);
+}
+/* п2з10 */
+img+p{
+margin-top: 150px;
+}
+
+/* п2з7 */
+
+#about p:lang(en) {
+    font-style: italic;    
+    color: #394f64;    
+    background-color: rgba(0, 255, 0, 0.171);   
+      font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style: normal; 
+}
 
 .about h2::before {
     content: "\F824";
@@ -127,11 +184,46 @@ header a:active {
 .tel::before {
     content: "\F5C1";
     font-family: "bootstrap-icons";
+    border: 1px solid #0a1b66;/* п2з9 */ 
 }
 .mail::before {
     content: "\F32F";
     font-family: "bootstrap-icons";
+     border: 1px solid #0a1b66;/* п2з9 */
 }
-.my a {
-    color:red;
+
+/* лекция 24--09 */
+form{
+    width: 270px;
+    border-radius: 30px;
+    padding: 40px; /*не меньше чем скругление */
+    background-color: aqua;
+    margin: 20px auto;
+}
+
+input{
+    border: 1px solid darkblue;
+    background-color: lightblue;
+    padding: 5px;
+    color: darkblue;
+    border-radius: 4px;
+}
+input[type=submit]{
+    background-color: blue;
+    color: white;
+}
+input[type=submit]:hover{
+    background-color: rgb(142, 142, 255);
+    color: rgb(0, 5, 71);
+}
+input[type=checkbox]{
+    accent-color: rgb(6, 250, 6);
+    margin: 10px 0;
+}
+
+textarea,select{
+    background-color: rgb(142, 142, 255);
+    border-radius: 4px;
+    border: 1px solid darkblue;
+    margin-top: 20px;
 }
