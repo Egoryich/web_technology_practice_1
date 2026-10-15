@@ -1,9 +1,10 @@
-
 * {
     margin: 0;
     padding: 0;
 }
-ul, ol {
+
+ul,
+ol {
     padding-left: 50px;
 }
 
@@ -23,7 +24,7 @@ header {
 }
 
 footer {
-    background-color:rgba(137, 43, 226, 0.349);
+    background-color: rgba(137, 43, 226, 0.349);
     padding: 20px;
 }
 
@@ -32,20 +33,30 @@ footer {
     padding: 20px 80px;
     text-align: justify;
 }
+
+.feedback{
+    
+    background-color: rgba(117, 32, 197, 0.541);
+    padding: 20px 80px;
+    text-align: justify;
+
+}
+
 .articles {
-    background-color:rgba(91, 34, 145, 0.562);
+    background-color: rgba(91, 34, 145, 0.562);
     text-align: center;
 }
+
 .date {
     padding: 20px 80px;
     text-align: right;
 }
 
 .avatar-circle {
-width: 80px;                 
-height: 80px;
-border-radius: 50%;
-border: 1px solid #0a1b66; 
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #0a1b66;
 }
 
 
@@ -55,31 +66,88 @@ p {
     line-height: 1.1rem;
     margin-bottom: 1.3rem;
     text-align: justify;
+    font-family: "Jura", sans-serif;
+    font-style: normal;
 }
 
-footer>p{
+footer>p {
     font-size: 1rem;
     line-height: 1rem;
 }
+
 p,
 dt {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 dl,
 dd {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 dd {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.pr3table {      
+    border-collapse: collapse;
+    border: 5px solid rgb(39, 0, 0);
+}
+  
+.pr3table td, th {
+    border: 2px solid black;
+}
+
+.pr3table tbody tr:nth-child(even){
+background-color:#4296da34;
+}
+.pr3table tbody tr:nth-child(odd){
+background-color:#8642da96;
+}
+
+.pr3table thead tr:nth-child(odd){
+background-color:#5cffd6c9;
+}
+
+.pr3table td:first-child{
+font-size: 50%;
+color: #052296c4;
+}
+
+.pr3table tbody tr:last-child{
+font-size: 80%;
+color: #052296c4;
 }
 
 h2 {
     font-size: 2rem;
     color: darkblue;
+    font-family: "Pacifico", cursive;
+    /* font-weight: 400; */
+    font-style: normal;
 }
+/* Пр2-2-3 •	text-decoration
+•	text-transform
+•	font-weight
+•	font-stile */
+h3 {
 
+
+text-decoration: underline dotted;
+}
+h4 {
+text-transform:capitalize;
+text-decoration: underline dotted;
+}
+h5 {
+    font-weight:500;
+    text-decoration: underline dotted;
+
+}
+h6{
+    font-style: italic;
+    text-decoration: underline dotted;
+}
 nav>ul {
     list-style: none;
     display: flex;
@@ -100,6 +168,7 @@ header a {
     text-decoration: none;
     text-transform: uppercase;
 }
+
 header a:hover,
 header a:focus,
 header a:active {
@@ -111,9 +180,11 @@ header a:active {
 a {
     color: rgb(238, 114, 217);
 }
-a:visited{
+
+a:visited {
     color: rgb(43, 4, 58);
 }
+
 a:hover,
 a:focus,
 a:active {
@@ -124,9 +195,11 @@ a:active {
 .mainpage .articles a {
     color: rgb(124, 199, 54);
 }
-.mainpage .articles a:visited{
+
+.mainpage .articles a:visited {
     color: rgb(47, 88, 0);
 }
+
 .mainpage .articles a:hover,
 .mainpage .articles a:focus,
 .mainpage .articles a:active {
@@ -146,84 +219,136 @@ a:active {
     color: rgb(255, 133, 255);
     margin-left: 10px;
     border-radius: 50%;
-    border: 1px solid #0a1b66; 
-} 
+    border: 1px solid #0a1b66;
+}
+
 /* п2з6 */
 .article p::first-line {
-    letter-spacing: 2px; 
+    letter-spacing: 20px;
 }
 
 /* п2з8 */
-.mainpage .about p{
-    color:rgb(99, 0, 102);
+.mainpage .about p {
+    color: rgb(99, 0, 102);
     background-color: rgba(0, 255, 255, 0.062);
 }
+
 /* п2з10 */
-img+p{
-margin-top: 150px;
+img+p {
+    margin-top: 150px;
 }
 
 /* п2з7 */
 
 #about p:lang(en) {
-    font-style: italic;    
-    color: #394f64;    
-    background-color: rgba(0, 255, 0, 0.171);   
-      font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    color: #394f64;
+    background-color: rgba(0, 255, 0, 0.171);
+    font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;
-    font-weight:300;
-    font-style: normal; 
+    font-weight: 300;
+    font-style: normal;
 }
 
 .about h2::before {
     content: "\F824";
     font-family: "bootstrap-icons";
     margin-right: 10px;
-    color:aqua;
+    color: aqua;
 }
+
 .tel::before {
     content: "\F5C1";
     font-family: "bootstrap-icons";
-    border: 1px solid #0a1b66;/* п2з9 */ 
+    border: 1px solid #0a1b66;
+    /* п2з9 */
 }
+
 .mail::before {
     content: "\F32F";
     font-family: "bootstrap-icons";
-     border: 1px solid #0a1b66;/* п2з9 */
+    border: 1px solid #0a1b66;
+    /* п2з9 */
 }
 
 /* лекция 24--09 */
-form{
-    width: 270px;
+form {
+    width: 370px;
     border-radius: 30px;
-    padding: 40px; /*не меньше чем скругление */
-    background-color: aqua;
+    padding: 40px;
+    /*не меньше чем скругление */
+    background-color: rgb(63, 0, 116);
     margin: 20px auto;
+    color: wheat;
 }
 
-input{
+input {
     border: 1px solid darkblue;
     background-color: lightblue;
     padding: 5px;
     color: darkblue;
     border-radius: 4px;
+    
 }
-input[type=submit]{
-    background-color: blue;
-    color: white;
+
+.form__item input[type="text"]{
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    /* margin-bottom: 10px; */
+    border: white solid 1px;
+    background-color: #c7aceb;
 }
-input[type=submit]:hover{
+.form__item input[type="email"]{
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    /* margin-bottom: 10px; */
+    border: white solid 1px;
+    background-color: #c7aceb;
+}
+
+.form__item input[type=submit]{
+    background-color: rgb(165, 78, 199);
+    color: rgb(62, 0, 87);
+}
+
+input[type=submit] {
+    background-color: rgb(166, 127, 182);
+    color: rgb(62, 0, 87);
+    text-transform: uppercase;
+    padding: 15px 25px;
+}
+
+.form__item input[type=submit]:hover {
     background-color: rgb(142, 142, 255);
+    text-transform: uppercase;
     color: rgb(0, 5, 71);
 }
-input[type=checkbox]{
-    accent-color: rgb(6, 250, 6);
+
+input[type=checkbox] {
+    accent-color: rgb(209, 52, 162);
     margin: 10px 0;
 }
 
-textarea,select{
+.form__item textarea{
     background-color: rgb(142, 142, 255);
     border-radius: 4px;
-    border: 1px solid darkblue;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    width: 250px;
+    padding: 5px;
+    /* margin-bottom: 10px; */
+    border: white solid 1px;
+    background-color: #c7aceb;
 }
+.form__item select {
+    background-color: rgb(142, 142, 255);
+    border-radius: 4px;
+    /* margin-top: 20px; */
+    width: 262px;
+    padding: 5px;
+    /* margin-bottom: 10px; */
+    border: white solid 1px;
+    background-color: #c7aceb;
+}
+
